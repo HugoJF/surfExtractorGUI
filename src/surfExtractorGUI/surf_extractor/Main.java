@@ -1,10 +1,5 @@
 package surfExtractorGUI.surf_extractor;
 
-import java.io.FileNotFoundException;
-
-import surfExtractor.image_set.ImageSet;
-import surfExtractor.surf_extractor.SurfExtractor;
-
 public class Main {
 
 	public static void main(String[] args) {
