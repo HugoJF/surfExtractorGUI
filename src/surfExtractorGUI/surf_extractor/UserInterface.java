@@ -25,6 +25,10 @@ import javax.swing.SwingConstants;
 import javax.swing.JProgressBar;
 import javax.swing.filechooser.FileFilter;
 
+/**
+ * @author Hugo - automatic shit I`m not commenting
+ * 
+ */
 public class UserInterface {
 
 	public static JFrame frmSurfextractor;
