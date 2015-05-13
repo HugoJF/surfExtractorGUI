@@ -3,6 +3,8 @@ package surfExtractorGUI.surf_extractor;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 
+import surfExtractor.SurfExtractor;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class Main {
 	}
 	
 	public Main() {
-		surfExtractor.SurfExtractor m = new surfExtractor.SurfExtractor();
+		SurfExtractor m = new SurfExtractor();
 		UserInterface.start();
 		UserInterface.hold();
 		try {
