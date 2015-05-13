@@ -1,5 +1,10 @@
 package surfExtractorGUI.surf_extractor;
 
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
+
+import surfExtractor.SurfExtractor;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -7,13 +12,17 @@ public class Main {
 	}
 	
 	public Main() {
-		surfExtractor.surf_extractor.Main m = new surfExtractor.surf_extractor.Main();
+		SurfExtractor m = new SurfExtractor();
 		UserInterface.start();
 		UserInterface.hold();
-		m.generateArff(UserInterface.imagesetPath.getAbsolutePath(), 
-				(Integer) UserInterface.kmeanskSpinner.getValue(), 
-				(Integer) UserInterface.kmeansIterSpinner.getValue(), 
-				"TestingGUI", UserInterface.arffDestinationPath.getAbsolutePath());
+		try {
+			m.generateArff(UserInterface.imagesetPath.getAbsolutePath(), 
+					(Integer) UserInterface.kmeanskSpinner.getValue(), 
+					(Integer) UserInterface.kmeansIterSpinner.getValue(), 
+					"TestingGUI", UserInterface.arffDestinationPath.getAbsolutePath());
+		} catch (FileNotFoundException | UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		UserInterface.done();
 		
 	}
