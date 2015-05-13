@@ -10,7 +10,7 @@ public class Main {
 	}
 	
 	public Main() {
-		surfExtractor.surf_extractor.Main m = new surfExtractor.surf_extractor.Main();
+		surfExtractor.SurfExtractor m = new surfExtractor.SurfExtractor();
 		UserInterface.start();
 		UserInterface.hold();
 		try {
