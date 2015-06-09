@@ -11,6 +11,9 @@ public class Main {
 		new Main();
 	}
 	
+	/**
+	 * Start SurfExtractor with parameters supplied on GUI
+	 */
 	public Main() {
 		SurfExtractor m = new SurfExtractor();
 		UserInterface.start();

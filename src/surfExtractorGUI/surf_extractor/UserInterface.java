@@ -26,7 +26,7 @@ import javax.swing.JProgressBar;
 import javax.swing.filechooser.FileFilter;
 
 /**
- * @author Hugo - automatic shit I`m not commenting
+ * @author Hugo - Automatic generated code
  * 
  */
 public class UserInterface {
